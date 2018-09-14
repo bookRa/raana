@@ -30,7 +30,7 @@ app.post('/getsubrs', (req, res)=>{
   // let subr1 = req.body.subr1
   // axios.get('http://localhost:5000/')
   // .then(response=> res.send(response.data))
-  axios.post('http://localhost:5000/getsubrs', req.body)
+  axios.post('http://0.0.0.0:5002/getsubrs'/* 'http://localhost:5000/getsubrs' */, req.body)
   .then(response =>{
     console.log(response.data)
     res.send(response.data)

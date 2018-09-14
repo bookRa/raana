@@ -24,5 +24,9 @@ module.exports = {
             template: "./src/index.html",
             filename:"./index.html"
         })
-    ]
+    ],
+    // entry: [
+    //     'webpack-dev-server/client?http://localhost:8080',
+    //     // config.paths.demo
+    // ]
 }

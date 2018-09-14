@@ -1,0 +1,17 @@
+version: "3"
+services:
+  webapp:
+    # build: ./client
+    image: react-compose:latest
+    ports: 
+      - "80:80"
+  nodeserver:
+    # build: ./server
+    image: node-compose:latest
+    ports: 
+      - "4200:4200"
+  flaskserver:
+    # build: ./flask
+    image: flask-compose:latest
+    ports: 
+      - "5000:5000"

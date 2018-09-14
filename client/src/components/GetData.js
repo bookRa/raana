@@ -5,7 +5,7 @@ import axios from 'axios';
 
 export const sendData = (subr0, subr1) => {
   // console.log(subr1, subr2)
-  return axios.post('http://localhost:4200/getsubrs', {
+  return axios.post('http://localhost:4200/getsubrs'/* 'http://localhost:4200/getsubrs' */, {
     subr0: subr0, // "testOne",
     subr1: subr1 // "testDos"
   })
